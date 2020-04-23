@@ -1,12 +1,8 @@
-/******************************************
-*  AUTHOR:         ABHISHEK YADAV         *
-*  INSTITUITION:   CHANDIGARH UNIVERSITY  *
-******************************************/
 #include <bits/stdc++.h>
-	using namespace std;
- 
+using namespace std;
+Â 
 typedef long long ll;
- 
+Â 
 int main(){
 	ios::sync_with_stdio(false);
 	int T;
