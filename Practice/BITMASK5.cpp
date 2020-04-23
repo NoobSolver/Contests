@@ -1,10 +1,5 @@
-/******************************************
-*  AUTHOR:         ABHISHEK YADAV         *
-*  INSTITUITION:   CHANDIGARH UNIVERSITY  *
-******************************************/
 #include "bits/stdc++.h"
-	using namespace std;
-	
+using namespace std;
 #define io std::ios::sync_with_stdio(false);cin.tie(NULL);
 #define FOR(i,n) for(ll i = 0 ; i < n ; i++)
 #define FORR(i,a,b) for(ll i = a ; i < b ; i++)
@@ -22,24 +17,24 @@
 #define inf 1000000000000
 #define PI 3.1415926535897932384626433832795
 #define MOD 1000000007
- 
+Â 
 template<typename T, typename U> inline void umin(T &x, U y) { if(y < x) x = y; }
 template<typename T, typename U> inline void umax(T &x, U y) { if(x < y) x = y; }
- 
- 
- 
+Â 
+Â 
+Â 
 //Using likecs and partial rajat1603 Lazy Propagation SegTree Template 		
- 
+Â 
 const int LIM = 1000003; 
- 
+Â 
 int segT[4*LIM];
 int lazy[4*LIM];
- 
+Â 
 void precalc(){
 	memset(segT,0,sizeof(segT));
 	memset(lazy,0,sizeof(lazy));
 }
- 
+Â 
 void propagate(int node , int l, int r) {
 	if (lazy[node]) {
 		if (l != r){
@@ -52,7 +47,7 @@ void propagate(int node , int l, int r) {
 		segT[node] = (r-l+1) - segT[node];
 	}
 }
- 
+Â 
 void update(int l, int r, int index, int ql, int qr) {
 	propagate(index,l,r);
 	if (l > qr || r < ql) {
@@ -70,7 +65,7 @@ void update(int l, int r, int index, int ql, int qr) {
 	update(mid + 1, r, rc ,ql, qr);
 	segT[index] = segT[lc] + segT[rc];
 }
- 
+Â 
 int query(int l, int r, int index, int ql, int qr) {
 	propagate(index,l,r);
 	if (l > qr || ql > r){
@@ -84,7 +79,7 @@ int query(int l, int r, int index, int ql, int qr) {
 	int rc = lc|1;
 	return query(l,mid,lc,ql,qr)+query(mid+1,r,rc,ql,qr);
 }
- 
+Â 
 int main(){
 	io
 	#ifdef ABHI
