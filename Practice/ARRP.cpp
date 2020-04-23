@@ -1,18 +1,5 @@
-/****************************************************
-*****************************************************
-**               Abhishek(abhiy13)                 **          
-**             Chandigarh University               **
-**   https://www.youtube.com/watch?v=r6zIGXun57U   **
-*****************************************************
-****************************************************/ 
- 
- 
 #include "bits/stdc++.h"
-	using namespace std;
- 
- 
-//`````````````````````````````````````````````````````Random Stuff Here```````````````````````````````````````````````````````//
-	
+using namespace std;
 #define io std::ios::sync_with_stdio(false);
 #define FOR(i,n) for(ll i = 0 ; i < n ; i++)
 #define FORR(i,a,b) for(ll i = a ; i < b ; i++)
@@ -35,9 +22,9 @@
 #define ss second
 #define sll(x) scanf("%lld" , &x);
 #define prll(x) printf("%lld\n",x);
- 
+Â 
 #define TRACE
- 
+Â 
 #ifdef TRACE
 #define trace(...) __f(#__VA_ARGS__, __VA_ARGS__)
 template <typename Arg1>
@@ -51,10 +38,10 @@ void __f(const char* names, Arg1&& arg1, Args&&... args){
 #else
 #define trace(...)
 #endif   
- 
- 
+Â 
+Â 
 //``````````````````````````````````````````````````````Start of Program`````````````````````````````````````````````````//
- 
+Â 
 int main(){
 	#ifdef ABHI
 		freopen("input.txt" , "r" , stdin);
