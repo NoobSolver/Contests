@@ -1,10 +1,5 @@
-/******************************************
-*  AUTHOR:         ABHISHEK YADAV         *
-*  INSTITUITION:   CHANDIGARH UNIVERSITY  *
-******************************************/
 #include "bits/stdc++.h"
-	using namespace std;
-	
+using namespace std;
 #define io std::ios::sync_with_stdio(false);cin.tie(NULL);
 #define FOR(i,n) for(ll i = 0 ; i < n ; i++)
 #define FORR(i,a,b) for(ll i = a ; i < b ; i++)
@@ -24,12 +19,12 @@
 #define plld(x) printf("%lld\n" , x)
 #define pid(x) printf("%d\n" , x)
 #define pllu(x) printf("%llu\n" , x)
- 
- 
+Â 
+Â 
 template<typename T, typename U> inline void umin(T &x, U y) { if(y < x) x = y; }
 template<typename T, typename U> inline void umax(T &x, U y) { if(x < y) x = y; }
- 
- 
+Â 
+Â 
 int main(){
 	#ifdef ABHI
 	//	freopen("input.txt" , "r" , stdin);
