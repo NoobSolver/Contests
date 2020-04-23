@@ -1,12 +1,6 @@
-/******************************************
-*  AUTHOR:         ABHISHEK YADAV         *
-*  INSTITUITION:   CHANDIGARH UNIVERSITY  *
-******************************************/
 #include <bits/stdc++.h>
-	using namespace std;
- 
+using namespace std;
 typedef long long ll;
- 
 int main(){
 	ios::sync_with_stdio(false);
 	#ifdef ABHI
