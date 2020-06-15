@@ -15,27 +15,31 @@ int main() {
 	cout.precision(10);
 	cout<<fixed;
 	int t;cin>>t;
+	
 	while(t--){
+		int cnt=0;
 		string s;
-		string s1,s2,s3;
+		string s1,s2,s3,s4;
 		cin>>s;
 		int n=s.length();
-		if(n%2 != 0)
-		cout<<0<<"\n";
-		else
-		for(int i=0;i<n;i++)
+		for(int i=1;i<=(n-2)/2;i++)
 		{
-			for(int j=i+1;j<n;j++)
-			{
-				
-			}
+	s1=s.substr(0,i);
+	s2=s.substr(i,i);
+	s3=s.substr(2*i,(n-2*i)/2);
+	s4=s.substr(2*i+((n-2*i)/2),(n-2*i)/2);
 	
+		 
+		 if(s1==s2 && s3==s4)
+		 {
+			 cnt++;
 		 }
+		 
 			
 		}
 
 		
-		cout<<"0"<<"\n";
+		cout<<cnt<<"\n";
   }
 	
 return 0;
