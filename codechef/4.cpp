@@ -20,12 +20,32 @@ int main() {
   ll n;
    cin>>n;
    
-   ll p=n&( ~ (n-1));
+   if(n%2 != 0)
+   {
+	   cout<<n/2<<endl;
+   }
+   else
+   {
+	   while(n!= 0)
+	   {
+		   if(n% 2 ==1)
+		   {
+			   break;
+		   }
+		   n=n/2;
+	   }
+	   if(n == 0) cout<< '0'<<endl;
+	   else
+	    cout<< n/2<<endl;
+   }
+}
+  /**
+  ll p=   n   & ( ~ (n-1));
    n=n/p;
    n=n/2;
    cout<<n<<"\n";
-	 
-	}
+	*/ 
+	
    	
  return 0;    	
 }
